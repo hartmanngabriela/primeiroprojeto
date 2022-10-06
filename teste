@@ -1,0 +1,65 @@
+from aluno import Aluno
+from turma import Turma
+from disciplina import Disciplina
+
+    if __name__ = __main__:
+        aluno1 = Aluno (1, Gabriela, ativo)
+        aluno2 = Aluno (2,Gustavo, ativo)
+        aluno3 = Aluno (3, Carla, inativo)
+        aluno4 = Aluno (4, Marcos, ativo)
+        aluno5 = Aluno (5, Felipe, ativo)
+
+        disciplina1 = Disciplina (Matematica, Talita)
+        disciplina2 = Disciplina (BIologia, Marcia)
+        disciplina3 = Disciplina (Portugues, Gilmar)
+        disciplina4 = Disciplina (Sociologia, Rogerio)
+
+        turma1 = Turma ([aluno3, aluno1, aluno2], [disciplina1])
+        turma2 = Turma ([aluno4, aluno5], [disciplina4, disciplina3)
+
+
+class Aluno:
+    def __init__ (self, id, nome, situacao):
+        self.id = id
+        self.nome = nome
+        self.situacao = situacao
+
+    def get_id (self):
+        return self.id
+
+    def get_nome (self):
+        return self.nome
+
+    def get_turma (self):
+        return self.situacao
+        
+        class Turma:
+    def __init__ (self, alunos, materia):
+        self.alunos = alunos
+        self.materias = materia
+
+    def get_alunos (self):
+        return self.alunos
+
+    def get_materias (self):
+        return self.materias
+
+
+    def alterar_turma(self, curso_antigo, curso_novo):
+            if self.curso == curso_antigo:
+                self.curso = curso_novo
+                return True
+            else:
+                return False
+                
+                
+                class Disciplina:
+    def __init__(self, nome_disciplina, professores):
+        self.nome_disciplina = nome_disciplina
+        self.professores = professores
+
+    def get_nome_disciplina (self):
+        return self.nome_disciplina
+
+    def get_professores (self):
+        return self.professores
